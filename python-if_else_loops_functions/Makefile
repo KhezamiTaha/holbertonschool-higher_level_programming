@@ -1,5 +1,5 @@
 
-Function_file = 2-print_alphabet.py
+Function_file = 3-print_alphabt.py
 Main_file =  0-binary_tree_nodemain.c
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -57,7 +57,7 @@ script:
 	pycodestyle $(Function_file)
 	./$(Function_file)
 touch:
-	$(Function_file)
+	touch $(Function_file)
 git:
 	$(git)
 
