@@ -1,5 +1,5 @@
 
-Function_file =   0-binary_tree_node.c
+Function_file =   1-last_digit.py 
 Main_file =  0-binary_tree_nodemain.c
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -51,6 +51,11 @@ folder:
 	mkdir $(Directory)
 	cd $(Directory)
 	touch $(ReadMe)
+
+script:
+	chmod u+x $(Function_file)
+	pycodestyle $(Function_file)
+	./$(Function_file)
 
 git:
 	$(git)
