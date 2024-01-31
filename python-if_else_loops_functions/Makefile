@@ -1,5 +1,5 @@
 
-Function_file = 4-print_hexa.py
+Function_file = 5-print_comb2.py
 Main_file =  0-binary_tree_nodemain.c
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
