@@ -1,6 +1,6 @@
 
-Function_file = 6-print_comb3.py
-Main_file =  0-binary_tree_nodemain.c
+Function_file = 7-islower.py
+Main_file =  7-main.py
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
@@ -56,6 +56,10 @@ script:
 	chmod u+x $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Function_file)
+scriptMain:
+	chmod u+x $(Main_file)
+	pycodestyle $(Main_file)
+	./$(Main_file)
 touch:
 	touch $(Function_file)
 git:
