@@ -1,6 +1,6 @@
 
-Function_file = 8-uppercase.py
-Main_file =  8-main.py
+Function_file = 12-fizzbuzz.py
+Main_file =  12-main.py
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
