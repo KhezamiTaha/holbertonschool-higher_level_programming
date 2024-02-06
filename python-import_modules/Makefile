@@ -1,5 +1,5 @@
 
-Function_file = 2-args.py
+Function_file = 3-infinite_add.py
 Main_file =  0-add.py
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -63,6 +63,12 @@ main:
 	pycodestyle $(Main_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
+file:
+	chmod u+x $(Function_file)
+	black $(Function_file)
+	pycodestyle $(Function_file)
+	./$(Function_file)
+
 touch:
 	touch $(Function_file)
 	touch  $(Main_file)
