@@ -1,6 +1,6 @@
 
-Function_file = calculator_1.py
-Main_file =  1-calculation.py
+Function_file = add_0.py
+Main_file =  0-add.py
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
