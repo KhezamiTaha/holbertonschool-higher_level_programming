@@ -1,6 +1,6 @@
 
-Function_file = 2-replace_in_list.py
-Main_file =  2-main.py
+Function_file = 3-print_reversed_list_integer.py
+Main_file =  3-main.py
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
