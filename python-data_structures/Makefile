@@ -1,6 +1,6 @@
 
-Function_file = 7-add_tuple.py
-Main_file =  7-main.py
+Function_file = 8-multiple_returns.py
+Main_file =  8-main.py
 NAME =  Python - Data Structures: Lists, Tuples
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
