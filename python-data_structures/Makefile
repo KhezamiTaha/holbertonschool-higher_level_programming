@@ -1,7 +1,7 @@
 
 Function_file = 7-add_tuple.py
 Main_file =  7-main.py
-NAME =  If/else, loops, functions
+NAME =  Python - Data Structures: Lists, Tuples
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
 
