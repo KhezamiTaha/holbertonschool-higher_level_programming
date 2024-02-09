@@ -1,6 +1,6 @@
 
-Function_file = 6-print_matrix_integer.py
-Main_file =  6-main.py
+Function_file = 7-add_tuple.py
+Main_file =  7-main.py
 NAME =  If/else, loops, functions
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 

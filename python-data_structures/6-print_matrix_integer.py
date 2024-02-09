@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     if not matrix:
-        return
-    for row in matrix:
-        for i in range(len(row)):
-            print("{:d}".format(row[i]), end="")
-            if i != len(row) - 1:
+        return   #this will print None
+    for roww in matrix:
+        for i in range(len(roww)):
+            print("{:d}".format(roww[i]), end="")
+            if i != len(roww) - 1:
                 print(" ", end="")
         print()
