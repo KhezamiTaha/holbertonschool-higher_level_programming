@@ -1,6 +1,6 @@
 
-Function_file = 9-max_integer.py
-Main_file =  9-main.py
+Function_file = 10-divisible_by_2.py
+Main_file =  10-main.py
 NAME =  Python - Data Structures: Lists, Tuples
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
@@ -60,7 +60,6 @@ main:
 	chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
 	black $(Function_file)
-	pycodestyle $(Main_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
 file:
