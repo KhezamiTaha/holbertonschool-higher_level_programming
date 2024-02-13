@@ -1,8 +1,8 @@
 
-Function_file = 8-simple_delete.py
-Main_file =  8-main.py
+Function_file = 9-multiply_by_2.py
+Main_file =  9-main.py
 
-NAME =  def simple_delete(a_dictionary, key=""):
+NAME =  def multiply_by_2(a_dictionary):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
