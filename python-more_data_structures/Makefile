@@ -1,8 +1,8 @@
 
-Function_file = 6-print_sorted_dictionary.py
-Main_file =  6-main.py
+Function_file = 7-update_dictionary.py
+Main_file =  7-main.py
 
-NAME =  def print_sorted_dictionary(a_dictionary):
+NAME =  def update_dictionary(a_dictionary, key, value):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
