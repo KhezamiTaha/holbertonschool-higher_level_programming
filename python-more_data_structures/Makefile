@@ -1,8 +1,8 @@
 
-Function_file = 10-best_score.py
-Main_file =  10-main.py
+Function_file = 11-multiply_list_map.py
+Main_file =  11-main.py
 
-NAME =  def best_score(a_dictionary):
+NAME =  def multiply_list_map(my_list=[], number=0):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
