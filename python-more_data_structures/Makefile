@@ -1,7 +1,8 @@
 
-Function_file = 2-uniq_add.py
-Main_file =  2-main.py
-NAME =  Python - Data Structures: Lists, Tuples
+Function_file = 3-common_elements.py
+Main_file =  3-main.py
+
+NAME =  def common_elements(set_1, set_2):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
 
@@ -72,6 +73,7 @@ touch:
 	touch $(Function_file)
 	touch  $(Main_file)
 	echo "#!/usr/bin/python3" >> "$(Function_file)"
+	echo "$(NAME)" >> "$(Function_file)"
 git:
 	rm -rf __pycache__
 	$(git)
