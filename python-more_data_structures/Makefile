@@ -1,6 +1,6 @@
 
-Function_file = 1-search_replace.py
-Main_file =  1-main.py
+Function_file = 2-uniq_add.py
+Main_file =  2-main.py
 NAME =  Python - Data Structures: Lists, Tuples
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
