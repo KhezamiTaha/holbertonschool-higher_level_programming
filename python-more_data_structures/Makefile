@@ -1,8 +1,8 @@
 
-Function_file = 5-number_keys.py
-Main_file =  5-main.py
+Function_file = 6-print_sorted_dictionary.py
+Main_file =  6-main.py
 
-NAME =  def number_keys(a_dictionary):
+NAME =  def print_sorted_dictionary(a_dictionary):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
