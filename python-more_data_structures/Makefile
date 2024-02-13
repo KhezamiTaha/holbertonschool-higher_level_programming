@@ -1,8 +1,8 @@
 
-Function_file = 7-update_dictionary.py
-Main_file =  7-main.py
+Function_file = 8-simple_delete.py
+Main_file =  8-main.py
 
-NAME =  def update_dictionary(a_dictionary, key, value):
+NAME =  def simple_delete(a_dictionary, key=""):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
