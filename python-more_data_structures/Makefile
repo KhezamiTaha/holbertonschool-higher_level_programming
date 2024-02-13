@@ -1,8 +1,8 @@
 
-Function_file = 3-common_elements.py
-Main_file =  3-main.py
+Function_file = 4-only_diff_elements.py
+Main_file =  4-main.py
 
-NAME =  def common_elements(set_1, set_2):
+NAME =  def only_diff_elements(set_1, set_2):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
 
