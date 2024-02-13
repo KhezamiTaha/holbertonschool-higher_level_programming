@@ -1,8 +1,8 @@
 
-Function_file = 9-multiply_by_2.py
-Main_file =  9-main.py
+Function_file = 10-best_score.py
+Main_file =  10-main.py
 
-NAME =  def multiply_by_2(a_dictionary):
+NAME =  def best_score(a_dictionary):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
