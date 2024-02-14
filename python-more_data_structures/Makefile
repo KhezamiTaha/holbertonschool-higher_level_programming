@@ -1,8 +1,8 @@
 
-Function_file = 11-multiply_list_map.py
-Main_file =  11-main.py
+Function_file = 12-roman_to_int.py
+Main_file =  12-main.py
 
-NAME =  def multiply_list_map(my_list=[], number=0):
+NAME =  def roman_to_int(roman_string):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
