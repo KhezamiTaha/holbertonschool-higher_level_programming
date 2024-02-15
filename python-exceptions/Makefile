@@ -1,8 +1,8 @@
 
-Function_file = 5-raise_exception.py
-Main_file =  5-main.py
+Function_file = 6-raise_exception_msg.py
+Main_file =  6-main.py
 
-NAME =  def raise_exception():
+NAME =  def raise_exception_msg(message=""):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
