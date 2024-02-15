@@ -1,8 +1,8 @@
 
-Function_file = 4-list_division.py
-Main_file =  4-main.py
+Function_file = 5-raise_exception.py
+Main_file =  5-main.py
 
-NAME =  def list_division(my_list_1, my_list_2, list_length):
+NAME =  def raise_exception():
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
