@@ -1,8 +1,8 @@
 
-Function_file = 0-safe_print_list.py
-Main_file =  0-main.py
+Function_file = 1-safe_print_integer.py
+Main_file =  1-main.py
 
-NAME =  def safe_print_list(my_list=[], x=0):
+NAME =  def safe_print_integer(value):
 
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
