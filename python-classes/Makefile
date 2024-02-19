@@ -1,6 +1,6 @@
 
-Function_file = 0-square.py
-Main_file =  0-main.py
+Function_file = 1-square.py
+Main_file =  1-main.py
 
 NAME =  Classes and Objects
 NAME1 =  def raise_exception_msg(message=""):
