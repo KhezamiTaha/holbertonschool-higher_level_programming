@@ -11,14 +11,14 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """
-        Initializes a new Square object with the given side length.
+        Initializes a new Square object with the given side length and position.
 
         Args:
             size (int): The length of each side of the square. Default is 0.
-            position : the position of the square
+            position (tuple): The position of the square. Default is (0, 0).
 
         Raises:
-            TypeError: If size is not an integer.
+            TypeError: If size is not an integer or position is not a tuple of 2 integers.
             ValueError: If size is less than 0.
         """
         self.__position = position
@@ -55,15 +55,26 @@ class Square:
 
     @property
     def position(self):
+        """tuple: The position of the square."""
         return self.__position
 
     @position.setter
     def position(self, position):
-        boollen = self.__position[0] >= 0 and self.__position[1]
-        if len(self.__position) == 0 and boollen:
-            self.__position == position
-        else:
+        """
+        Set the position of the square.
+
+        Args:
+            position (tuple): The new position of the square as a tuple of 2 integers.
+
+        Raises:
+            TypeError: If position is not a tuple of 2 integers.
+        """
+        if not isinstance(position, tuple) or len(position) != 2 or \
+                not isinstance(position[0], int) or not isinstance(position[1], int) or \
+                position[0] < 0 or position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
+        else:
+            self.__position = position
 
     def area(self):
         """
@@ -79,16 +90,17 @@ class Square:
         Print the square using '#' characters.
 
         Prints the square represented by '#' characters with each side
-        having a length equal to the size of the square.
+        having a length equal to the size of the square, and positioned
+        according to the current position attribute.
         """
-        for i in range(self.__position[1]):
+        for _ in range(self.__position[1]):
             print()
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size):
-                for i in range(self.__position[0]):
+            for _ in range(self.__size):
+                for _ in range(self.__position[0]):
                     print(" ", end="")
-                for i in range(self.__size):
+                for _ in range(self.__size):
                     print("#", end="")
                 print()
