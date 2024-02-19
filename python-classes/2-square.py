@@ -3,6 +3,7 @@
 This module defines a class called Square.
 """
 
+
 class Square:
     """
     This class represents a square shape.
@@ -14,7 +15,7 @@ class Square:
 
         Args:
             size (int): The length of each side of the square. Default is 0.
-        
+
         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
