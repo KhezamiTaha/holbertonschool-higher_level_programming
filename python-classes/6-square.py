@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Write a class Square that defines a square by size
     and calculate current square area """
+
+
 class Square:
     """
     Represents a square.
