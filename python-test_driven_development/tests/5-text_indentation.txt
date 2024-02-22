@@ -28,7 +28,7 @@ TypeError: text_indentation() takes 1 positional argument but 2 were given
 >>> text_indentation("Hi this: is, test 2.") #doctest: +REPORT_NDIFF
 Hi this:
 <BLANKLINE>
- is, test 2.
+is, test 2.
 <BLANKLINE>
 
 """
