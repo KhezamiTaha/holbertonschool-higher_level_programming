@@ -58,10 +58,10 @@ script:
 	chmod u+x $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Function_file)
+	black $(Function_file)
 main:
 	chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
-	black $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
 file:
