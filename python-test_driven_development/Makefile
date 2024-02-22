@@ -26,6 +26,8 @@ Final_header = \#include \"$(Header)\"
 ReadMe = README.md
 
 
+
+
 all: $(OBJ)
 	$(CC)  $(CFLAGS)  $(OBJ) -o  $(NAME)
 	betty  $(Header) $(Main_file)  $(Function_file)
@@ -64,6 +66,8 @@ main:
 	chmod u+x $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
+black:
+	black $(Function_file)
 file:
 	chmod u+x $(Function_file)
 	black $(Function_file)
