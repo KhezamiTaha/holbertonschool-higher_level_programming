@@ -1,6 +1,6 @@
 
-Function_file = 2-matrix_divided.py
-Main_file =  2-main.py
+Function_file = 3-say_my_name.py
+Main_file =  3-main.py
 
 NAME =  def matrix_divided(matrix, div):
 NAME1 =  def raise_exception_msg(message=""):
