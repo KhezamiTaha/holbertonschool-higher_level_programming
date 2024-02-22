@@ -11,9 +11,18 @@ def text_indentation(text):
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    for i in text:
-        if i in [".", "?", ":"]:
-            print(i)
-            print()
-        else:
-            print("{}".format(i), end="")
+
+    # Initialize an empty string to store the formatted text
+    formatted_text = ""
+
+    # Iterate through each character in the text
+    for char in text:
+        # Append the current character to the formatted text
+        formatted_text += char
+
+        # If the current character is '.', '?', or ':', add 2 new lines
+        if char in (".", "?", ":"):
+            formatted_text += "\n\n"
+
+    # Print the formatted text without leading or trailing spaces
+    print("\n".join(line.strip() for line in formatted_text.split("\n")))
