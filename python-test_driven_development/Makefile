@@ -1,8 +1,8 @@
 
-Function_file = 0-add_integer.py
-Main_file =  0-main.py
+Function_file = 2-matrix_divided.py
+Main_file =  2-main.py
 
-NAME =  def add_integer(a, b=98):
+NAME =  def matrix_divided(matrix, div):
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
