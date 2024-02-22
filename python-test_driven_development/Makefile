@@ -1,8 +1,8 @@
 
-Function_file = 3-say_my_name.py
-Main_file =  3-main.py
+Function_file = 4-print_square.py
+Main_file =  4-main.py
 
-NAME =  def matrix_divided(matrix, div):
+NAME =  def print_square(size):
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 
