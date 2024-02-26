@@ -2,16 +2,14 @@
 
 """
 This script defines a Rectangle class with properties for width and height,
-which are enforced to be positive integers.
 """
 
 
 class Rectangle:
 
     """
-    A class representing a rectangle.
-
-    This class provides a blueprint for creating rectangle objects.
+    Constructor for the Rectangle class, initializing a rectangle with the
+    given width and height values. Defaults to zero if no values are provided.
     """
 
     def __init__(self, width=0, height=0):
