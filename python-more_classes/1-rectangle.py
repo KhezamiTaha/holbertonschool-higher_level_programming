@@ -1,21 +1,21 @@
 #!/usr/bin/python3
 
 """
-This script defines a Rectangle class with properties for width and height,
-which are enforced to be positive integers.
+Rectangle height and weight
 """
 
 
 class Rectangle:
 
     """
-    Constructor for the Rectangle class, initializing a rectangle with the
-    given width and height values. Defaults to zero if no values are provided.
+    A class representing a rectangle.
+
+    This class provides a blueprint for creating rectangle objects.
     """
 
     def __init__(self, width=0, height=0):
-        self.height = height
-        self.width = width
+        self.__width = width
+        self.__height = height
 
     """
     int: The width of the rectangle.
