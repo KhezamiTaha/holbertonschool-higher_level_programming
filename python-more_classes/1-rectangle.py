@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 """
-Rectangle height and weight
-doc
+This script defines a Rectangle class with properties for width and height,
+which are enforced to be positive integers.
 """
 
 
