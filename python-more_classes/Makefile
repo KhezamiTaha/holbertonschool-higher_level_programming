@@ -1,10 +1,12 @@
+#This is a Makefile
 
-Function_file = 0-rectangle.py
-Main_file =  0-main.py
+Function_file = 1-rectangle.py
+Main_file = $(number)-main.py
 
 NAME =  python-more_classes
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
 
 
 Header = binary_trees.h
