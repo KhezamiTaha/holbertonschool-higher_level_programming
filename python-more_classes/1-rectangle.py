@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+
 """
 Rectangle height and weight
 """
 
 
 class Rectangle:
+
     """
     A class representing a rectangle.
 
