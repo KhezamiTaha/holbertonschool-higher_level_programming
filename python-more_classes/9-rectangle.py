@@ -2,7 +2,6 @@
 
 """
 This script defines a Rectangle class with properties for width and height,
-which are enforced to be positive integers.
 """
 
 
@@ -17,9 +16,9 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        self.width = width
         self.height = height
-        type(self).number_of_instances += 1
+        self.width = width
+        Rectangle.number_of_instances += 1
 
     """
     int: The width of the rectangle.
