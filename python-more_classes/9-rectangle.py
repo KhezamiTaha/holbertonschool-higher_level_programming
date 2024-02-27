@@ -117,6 +117,10 @@ class Rectangle:
     @classmethod
     def square(cls, size=0):
         """
-        docstring
+        Make a square from a rectangle
+        Args:
+            size (int): the size of the square
+        Returns:
+            (Rectangle): instance of rectangle
         """
         return cls(size, size)
