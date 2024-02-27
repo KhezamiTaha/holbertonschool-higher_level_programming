@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 3-rectangle.py
+Function_file = 4-rectangle.py
 Main_file = $(number)-main.py
 
 NAME =  python-more_classes
@@ -63,7 +63,7 @@ script:
 main:
 	chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
-	black $(Function_file)
+#black $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
 file:
