@@ -45,14 +45,26 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set the height of the Rectangle."""
+
         return self.__height
+
+    """
+    Set the height of the rectangle.
+
+    Args:
+        value (int): The new height of the rectangle.
+
+    Raises:
+        TypeError: If value is not an integer.
+        ValueError: If value is less than 0.
+        """
 
     @height.setter
     def height(self, value):
+
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
@@ -60,9 +72,10 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        if self.__height == 0 or self.__width == 0:
+        if self.__height * self.__width == 0:
             return 0
-        return (self.__height + self.__width) * 2
+        else:
+            return (self.__height + self.__width) * 2
 
     def __str__(self):
         """
