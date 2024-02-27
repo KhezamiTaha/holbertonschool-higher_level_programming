@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 1-rectangle.py
+Function_file = 2-rectangle.py
 Main_file = $(number)-main.py
 
 NAME =  python-more_classes
