@@ -2,6 +2,7 @@
 
 """
 This script defines a Rectangle class with properties for width and height,
+which are enforced to be positive integers.
 """
 
 
@@ -16,12 +17,13 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        self.height = height
         self.width = width
-        Rectangle.number_of_instances += 1
+        self.height = height
+        type(self).number_of_instances += 1
 
     """
-    int: The width of the rectangle.
+    Property getter for the width attribute,
+    returns the private variable __width.
     """
 
     @property
@@ -29,51 +31,28 @@ class Rectangle:
         return self.__width
 
     """
-    Set the width of the rectangle.
-
-    Args:
-        value (int): The new width of the rectangle.
-
-    Raises:
-        TypeError: If value is not an integer.
-        ValueError: If value is less than 0.
-        """
+    Property setter for the width attribute, validating that the input is an
+    integer and greater than or equal to 0. Raises a TypeError otherwise.
+    """
 
     @width.setter
     def width(self, value):
-
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
 
-    """
-    int: The height of the rectangle.
-    """
-
     @property
     def height(self):
-
+        """Get/set the height of the Rectangle."""
         return self.__height
-
-    """
-    Set the height of the rectangle.
-
-    Args:
-        value (int): The new height of the rectangle.
-
-    Raises:
-        TypeError: If value is not an integer.
-        ValueError: If value is less than 0.
-        """
 
     @height.setter
     def height(self, value):
-
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
 
@@ -81,27 +60,22 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
-        if self.__height * self.__width == 0:
+        if self.__height == 0 or self.__width == 0:
             return 0
-        else:
-            return (self.__height + self.__width) * 2
+        return (self.__height + self.__width) * 2
 
     def __str__(self):
-        """
-        str doc
-        """
-        if self.__height * self.__width == 0:
+        if self.__height == 0 or self.__width == 0:
             return ""
-        return (((str(self.print_symbol) * self.__width) + "\n") * (
-            self.__height - 1)) + (str(self.print_symbol) * self.__width)
+        sy = str(self.print_symbol)
+        return ((sy * self.__width + "\n") * self.__height)[:-1]
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + ", " + str(
-            self.__height) + ")"
+        return f"Rectangle({self.__width}, {self.__height})"
 
     def __del__(self):
         print("Bye rectangle...")
-        Rectangle.number_of_instances -= 1
+        type(self).number_of_instances -= 1
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
