@@ -2,7 +2,6 @@
 
 """
 This script defines a Rectangle class with properties for width and height,
-which are enforced to be positive integers.
 """
 
 
@@ -17,13 +16,12 @@ class Rectangle:
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        self.width = width
         self.height = height
-        type(self).number_of_instances += 1
+        self.width = width
+        Rectangle.number_of_instances += 1
 
     """
-    Property getter for the width attribute,
-    returns the private variable __width.
+    int: The width of the rectangle.
     """
 
     @property
@@ -31,17 +29,28 @@ class Rectangle:
         return self.__width
 
     """
-    Property setter for the width attribute, validating that the input is an
-    integer and greater than or equal to 0. Raises a TypeError otherwise.
-    """
+    Set the width of the rectangle.
+
+    Args:
+        value (int): The new width of the rectangle.
+
+    Raises:
+        TypeError: If value is not an integer.
+        ValueError: If value is less than 0.
+        """
 
     @width.setter
     def width(self, value):
+
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
-        if value < 0:
+        elif value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
+    """
+    int: The height of the rectangle.
+    """
 
     @property
     def height(self):
