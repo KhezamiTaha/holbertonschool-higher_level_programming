@@ -92,9 +92,8 @@ class Rectangle:
         """
         if self.__height * self.__width == 0:
             return ""
-        return ((("#" * self.__width) + "\n") * (self.__height - 1)) + (
-            "#" * self.__width
-        )
+        return (((str(self.print_symbol) * self.__width) + "\n") * (
+            self.__height - 1)) + (str(self.print_symbol) * self.__width)
 
     def __repr__(self):
         return "Rectangle(" + str(self.__width) + ", " + str(
