@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 3-is_kind_of_class.py
+Function_file = 4-inherits_from.py
 Main_file = $(number)-main.py
 
 NAME =  python-everything_is_object
