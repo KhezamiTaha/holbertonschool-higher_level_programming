@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-Module: is_same_class
-Description: Provides a function to check if an object inherits from a specific class.
+Checks if the given object is a subclass of
+the specified class.
 """
 
 
