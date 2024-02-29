@@ -9,5 +9,6 @@ class BaseGeometry:
     """
     A base class for geometric shapes.
     """
+
     def area(self):
-    pass
+        raise Exception("area() is not implemented")
