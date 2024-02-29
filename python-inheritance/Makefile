@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 1-my_list.py
+Function_file = 2-is_same_class.py
 Main_file = $(number)-main.py
 
 NAME =  python-everything_is_object
@@ -63,7 +63,7 @@ script:
 main:
 	chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
-#black $(Function_file)
+	black $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
 file:
