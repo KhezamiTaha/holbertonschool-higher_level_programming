@@ -5,7 +5,7 @@ Description: Provides a function to check if an object
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
     Check if an object is an instance of a specific class.
 
