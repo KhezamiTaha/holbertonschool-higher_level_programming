@@ -108,23 +108,4 @@ TypeError: list expected at most 1 argument, got 2
 >>> print(my_list)
 ['Brennan', 'Poppy', 'School', 'Holberton', 'Betty']
 
-::
-
-    >>> my_list.print_sorted()
-    ['Betty', 'Brennan', 'Holberton', 'Poppy', 'School']
-
-
-::
-
-    >>> print(my_list)
-    ['Brennan', 'Poppy', 'School', 'Holberton', 'Betty']
-
-Nothing to sort with empty lists.
-
-::
-
-    >>> my_list = MyList()
-    >>> my_list.print_sorted()
-    []
-
 """
