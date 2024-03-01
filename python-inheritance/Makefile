@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 7-base_geometry.py
+Function_file = 8-rectangle.py
 Main_file = $(number)-main.py
 
 NAME =  python-everything_is_object
