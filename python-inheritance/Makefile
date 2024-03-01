@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 10-square.py
+Function_file = 11-square.py
 Main_file = $(number)-main.py
 
 NAME =  python-everything_is_object
