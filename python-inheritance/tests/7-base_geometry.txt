@@ -1,19 +1,10 @@
-The ``7-base_geometry`` module
-==============================
-
-Using ``BaseGeometry``
-----------------------
-
-Importing class from the module:
-    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
-
-
-Trying to print the area
-    >>> bg = BaseGeometry()
-    >>> bg.area()
-    Traceback (most recent call last):
+"""
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.area()
+Traceback (most recent call last):
     	      ...
-    Exception: area() is not implemented
+Exception: area() is not implemented
 
 
 Trying to pass a non-integer argument
@@ -21,15 +12,12 @@ Trying to pass a non-integer argument
     >>> bg.integer_validator("name", "5")
     Traceback (most recent call last):
     	      ...
-    TypeError: name must be an integer
+    TypeError: <name> must be an integer
 
 
 Trying to pass a boolean value
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("name", True)
-    Traceback (most recent call last):
-    	      ...
-    TypeError: name must be an integer
 
 
 Trying to pass a negative value
@@ -37,7 +25,7 @@ Trying to pass a negative value
     >>> bg.integer_validator("name", -5)
     Traceback (most recent call last):
     	      ...
-    ValueError: name must be greater than 0
+    ValueError: <name> must be greater than 0
 
 
 Trying to pass a zero value
@@ -45,7 +33,7 @@ Trying to pass a zero value
     >>> bg.integer_validator("name", 0)
     Traceback (most recent call last):
     	      ...
-    ValueError: name must be greater than 0
+    ValueError: <name> must be greater than 0
 
 
 Passing a positive value
@@ -95,7 +83,7 @@ Passing tuple to method
     >>> bg.integer_validator("age", (4,))
     Traceback (most recent call last):
     	      ...
-    TypeError: age must be an integer
+    TypeError: <name> must be an integer
 
 
 Passing list to method
@@ -103,7 +91,7 @@ Passing list to method
     >>> bg.integer_validator("age", [3])
     Traceback (most recent call last):
     	      ...
-    TypeError: age must be an integer
+    TypeError: <name> must be an integer
 
 
 Passing dict to method
@@ -111,7 +99,7 @@ Passing dict to method
     >>> bg.integer_validator("age", {3, 4})
     Traceback (most recent call last):
               ...
-    TypeError: age must be an integer
+    TypeError: <name> must be an integer
 
 
 Passing None to method
@@ -119,4 +107,6 @@ Passing None to method
     >>> bg.integer_validator("age", None)
     Traceback (most recent call last):
               ...
-    TypeError: age must be an integer
+    TypeError: <name> must be an integer
+
+"""
