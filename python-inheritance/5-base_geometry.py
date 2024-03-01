@@ -10,4 +10,4 @@ class BaseGeometry:
     A base class for geometric shapes.
     """
     def area(self):
-    pass
+        pass
