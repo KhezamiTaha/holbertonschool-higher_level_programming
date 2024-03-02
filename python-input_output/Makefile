@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 6-load_from_json_file.py
+Function_file = 7-add_item.py
 Main_file = $(number)-main.py
 
 NAME =  def load_from_json_file(filename):
