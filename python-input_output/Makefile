@@ -1,9 +1,9 @@
 #This is a Makefile
 
-Function_file = 0-read_file.py
+Function_file = 1-write_file.py
 Main_file = $(number)-main.py
 
-NAME =  def read_file(filename=""):
+NAME =  def write_file(filename="", text=""):
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
