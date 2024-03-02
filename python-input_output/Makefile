@@ -1,9 +1,9 @@
 #This is a Makefile
 
-Function_file = 3-to_json_string.py
+Function_file = 4-from_json_string.py
 Main_file = $(number)-main.py
 
-NAME =  def append_write(filename="", text=""):
+NAME =  def from_json_string(my_str):
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
