@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 2-append_write.py
+Function_file = 3-to_json_string.py
 Main_file = $(number)-main.py
 
 NAME =  def append_write(filename="", text=""):
