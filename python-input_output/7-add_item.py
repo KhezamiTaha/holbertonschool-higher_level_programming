@@ -7,8 +7,9 @@ Description: Appends command-line arguments to a JSON file.
 
 import sys
 from os.path import exists
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+
+load_from_json_file = __import__("6-load_from_json_file").load_from_json_file
+save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
 
 
 def main():
@@ -43,6 +44,7 @@ def main():
         list_final = listy
 
     save_to_json_file(list_final, filename)
+
 
 if __name__ == "__main__":
     main()
