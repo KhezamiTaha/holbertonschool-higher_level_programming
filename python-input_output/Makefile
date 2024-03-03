@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 11-student.py
+Function_file = 12-pascal_triangle.py
 Main_file = $(number)-main.py
 
 NAME =  def reload_from_json(self, json):
