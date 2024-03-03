@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 9-student.py
+Function_file = 10-student.py
 Main_file = $(number)-main.py
 
 NAME =  def __init__(self, first_name, last_name, age):
@@ -63,7 +63,7 @@ script:
 main:
 	chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
-	black $(Function_file)
+#black $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Main_file)
 file:
