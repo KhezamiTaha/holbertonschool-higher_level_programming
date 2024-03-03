@@ -1,9 +1,9 @@
 #This is a Makefile
 
-Function_file = 10-student.py
+Function_file = 11-student.py
 Main_file = $(number)-main.py
 
-NAME =  def __init__(self, first_name, last_name, age):
+NAME =  def reload_from_json(self, json):
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
@@ -65,7 +65,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file)
 	pycodestyle $(Function_file)
-	./$(Main_file)
+	./$(Main_file) student.json
 file:
 	chmod u+x $(Function_file)
 	black $(Function_file)
