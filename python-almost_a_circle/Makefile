@@ -1,7 +1,7 @@
 #This is a Makefile
 
 Function_file = ./models/rectangle.py
-Main_file = 1-main.py
+Main_file = 2-main.py
 #Main_file = $(number)-main.py
 
 NAME =  first class Base
