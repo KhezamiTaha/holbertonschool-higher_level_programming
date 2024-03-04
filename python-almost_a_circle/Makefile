@@ -1,7 +1,7 @@
 #This is a Makefile
 
 Function_file = ./models/rectangle.py
-Main_file = 6-main.py
+Main_file = 7-main.py
 #Main_file = $(number)-main.py
 
 NAME =  first class Base
@@ -66,7 +66,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file)
 	pycodestyle $(Function_file)
-	./$(Main_file) | cat -e
+	./$(Main_file)
 file:
 	chmod u+x $(Function_file)
 	black $(Function_file)
