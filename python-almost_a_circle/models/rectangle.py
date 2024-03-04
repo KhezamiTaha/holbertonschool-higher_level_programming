@@ -98,7 +98,10 @@ class Rectangle(Base):
 
     def display(self):
         """print the rectanglr in #"""
+        for y in range(self.__y):
+            print()
         for row in range(self.__height):
+            print("  ", end="")
             print(f'{self.__width * "#"}')
 
     def __str__(self):
