@@ -67,6 +67,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file)
 	pycodestyle $(Function_file)
+	pycodestyle ./models/base.py 
 	./$(Main_file)
 file:
 	chmod u+x $(Function_file)
