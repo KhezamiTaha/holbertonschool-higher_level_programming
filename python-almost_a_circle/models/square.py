@@ -35,7 +35,7 @@ class Square(Rectangle):
             id (int): Optional identifier for the Square object.
         """
         super().__init__(size, size, x, y, id)
-    
+
     def __str__(self):
         """
         Returns a string representation of the Square object.
@@ -43,6 +43,6 @@ class Square(Rectangle):
         Returns:
             str: A string representation of the Square object.
         """
-        return ("[Square] (" + str(self.id) + ") " + 
+        return ("[Square] (" + str(self.id) + ") " +
                 str(self.x) + "/" + str(self.y) + " - " +
                 str(self.width))

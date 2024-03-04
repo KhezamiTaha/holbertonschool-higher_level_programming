@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = ./models/rectangle.py
+Function_file = ./models/square.py
 Main_file = 9-main.py
 #Main_file = $(number)-main.py
 
