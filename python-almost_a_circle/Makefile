@@ -4,7 +4,7 @@ Function_file = ./models/rectangle.py
 Main_file = 7-main.py
 #Main_file = $(number)-main.py
 
-NAME =  first class Base
+NAME =  update(self, *args, **kwargs)
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
