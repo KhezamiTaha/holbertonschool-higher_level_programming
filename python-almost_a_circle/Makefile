@@ -1,10 +1,10 @@
 #This is a Makefile
 
 Function_file = ./models/square.py
-Main_file = 9-main.py
+Main_file = 10-main.py
 #Main_file = $(number)-main.py
 
-NAME =  update(self, *args, **kwargs)
+NAME =  class Square
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)

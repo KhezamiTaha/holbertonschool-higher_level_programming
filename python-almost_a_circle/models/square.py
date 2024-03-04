@@ -34,6 +34,7 @@ class Square(Rectangle):
             y (int): Y-coordinate of the square's position. Default is 0.
             id (int): Optional identifier for the Square object.
         """
+        self.size = size
         super().__init__(size, size, x, y, id)
 
     def __str__(self):
@@ -46,3 +47,18 @@ class Square(Rectangle):
         return ("[Square] (" + str(self.id) + ") " +
                 str(self.x) + "/" + str(self.y) + " - " +
                 str(self.width))
+
+    @property
+    def size(self):
+        """int: size of the rectangle."""
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        self.__size = value
+        self.width = value
+        self.width = value
