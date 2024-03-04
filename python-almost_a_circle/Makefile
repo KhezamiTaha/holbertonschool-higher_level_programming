@@ -1,7 +1,7 @@
 #This is a Makefile
 
 Function_file = ./models/rectangle.py
-Main_file = 2-main.py
+Main_file = 3-main.py
 #Main_file = $(number)-main.py
 
 NAME =  first class Base
@@ -79,9 +79,9 @@ create_files:
 	done
 
 touch:
-	touch $(Function_file)
+#touch $(Function_file)
 	touch  $(Main_file)
-	echo "#!/usr/bin/python3" >> "$(Function_file)"
+#echo "#!/usr/bin/python3" >> "$(Function_file)"
 touch1:
 	echo "$(NAME)" >> "$(Function_file)"
 
