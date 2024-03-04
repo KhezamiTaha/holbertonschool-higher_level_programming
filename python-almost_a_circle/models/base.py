@@ -3,7 +3,7 @@
 Module: base
 Desc: Defines Base class with identifier.
 """
-
+import json
 
 class Base:
     """
@@ -31,3 +31,8 @@ class Base:
         else:
             type(self).__nb_objects += 1
             self.id = type(self).__nb_objects
+    
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """to_json_string representation"""
+        return json.dumps(list_dictionaries)
