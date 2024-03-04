@@ -101,8 +101,7 @@ class Rectangle(Base):
         for y in range(self.__y):
             print()
         for row in range(self.__height):
-            print("  ", end="")
-            print(f'{self.__width * "#"}')
+            print(f'{" " * self.__x}{self.__width * "#"}')
 
     def __str__(self):
         return ("[Rectangle] (" + str(self.id) + ") " +

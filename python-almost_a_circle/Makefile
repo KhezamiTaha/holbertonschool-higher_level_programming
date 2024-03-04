@@ -66,7 +66,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file)
 	pycodestyle $(Function_file)
-	./$(Main_file)
+	./$(Main_file) | cat -e
 file:
 	chmod u+x $(Function_file)
 	black $(Function_file)
