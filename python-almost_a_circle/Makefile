@@ -1,7 +1,8 @@
 #This is a Makefile
 
 Function_file = ./models/square.py
-Main_file = 10-main.py
+Main_file = 11-main.py
+
 #Main_file = $(number)-main.py
 
 NAME =  class Square
