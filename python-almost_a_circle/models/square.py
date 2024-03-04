@@ -34,8 +34,8 @@ class Square(Rectangle):
             y (int): Y-coordinate of the square's position. Default is 0.
             id (int): Optional identifier for the Square object.
         """
-        self.size = size
         super().__init__(size, size, x, y, id)
+        self.size = size
 
     def __str__(self):
         """
@@ -44,9 +44,16 @@ class Square(Rectangle):
         Returns:
             str: A string representation of the Square object.
         """
-        return ("[Square] (" + str(self.id) + ") " +
-                str(self.x) + "/" + str(self.y) + " - " +
-                str(self.width))
+        return (
+            "[Square] ("
+            + str(self.id)
+            + ") "
+            + str(self.x)
+            + "/"
+            + str(self.y)
+            + " - "
+            + str(self.width)
+        )
 
     @property
     def size(self):
