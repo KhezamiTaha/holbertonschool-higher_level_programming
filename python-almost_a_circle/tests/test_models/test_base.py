@@ -53,6 +53,7 @@ class TestBase_instantiation(unittest.TestCase):
         with self.assertRaises(TypeError):
             Base(1, 2)
 
+
 class TestBase_to_json_string(unittest.TestCase):
     """Unittests for testing to_json_string """
 
@@ -97,6 +98,7 @@ class TestBase_to_json_string(unittest.TestCase):
     def test_to_json_string_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.to_json_string([], 1)
+
 
 class TestBase_save_to_file(unittest.TestCase):
     """Unittests for testing save_to_file method """
@@ -229,6 +231,7 @@ class TestBase_from_json_string(unittest.TestCase):
         with self.assertRaises(TypeError):
             Base.from_json_string([], 1)
 
+
 class TestBase_create(unittest.TestCase):
     """Unittests for testing create method """
 
@@ -345,6 +348,7 @@ class TestBase_load_from_file(unittest.TestCase):
     def test_load_from_file_more_than_one_arg(self):
         with self.assertRaises(TypeError):
             Base.load_from_file([], 1)
+
 
 if __name__ == "__main__":
     unittest.main()
