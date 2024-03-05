@@ -81,11 +81,17 @@ class Base:
         Create a new instance of the class using a dictionary.
 
         Args:
-            **dictionary: Keyword arguments containing attributes for the new instance.
+            **dictionary: Keyword arguments
 
         Returns:
-            instance: A new instance of the class initialized with the given attributes.
+            instance: A new instance of the class initialized with
         """
-        oop = cls(7, 7, 7)
+        if cls.__name__ == "Rectangle":
+            oop = cls(7, 7)
+        elif cls.__name__ == "Square":
+            oop = cls(7)
+        else:
+            return None
+
         oop.update(**dictionary)
         return oop
