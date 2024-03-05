@@ -1,11 +1,11 @@
 #This is a Makefile
 
 Function_file = ./models/base.py
-Main_file = 16-main.py
+Main_file = 17-main.py
 
 #Main_file = $(number)-main.py
 
-NAME =  def from_json_string(json_string):
+NAME =  def create(cls, **dictionary):
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)

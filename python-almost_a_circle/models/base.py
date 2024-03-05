@@ -70,7 +70,22 @@ class Base:
         Args:
             json_string (str): The JSON string to deserialize.
         """
-        if json_string is None or json_string is "":
+        if json_string is None or json_string == "":
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Create a new instance of the class using a dictionary.
+
+        Args:
+            **dictionary: Keyword arguments containing attributes for the new instance.
+
+        Returns:
+            instance: A new instance of the class initialized with the given attributes.
+        """
+        oop = cls(7, 7, 7)
+        oop.update(**dictionary)
+        return oop
