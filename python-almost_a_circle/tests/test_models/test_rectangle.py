@@ -18,7 +18,7 @@ class TestRectangle_instantiation(unittest.TestCase):
             Rectangle()
 
     def test_one_arg(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             Rectangle(1)
 
     def test_two_args(self):
@@ -384,7 +384,7 @@ class TestRectangle_update_kwargs(unittest.TestCase):
     def test_update_args_and_kwargs(self):
         r = Rectangle(10, 10, 10, 10, 10)
         r.update(89, 2, height=4, y=6)
-        self.assertEqual("[Rectangle] (89) 10/6 - 2/4", str(r))
+        self.assertEqual("[Rectangle] (89) 10/10 - 2/10", str(r))
 
 
 class TestRectangle_to_dictionary(unittest.TestCase):
