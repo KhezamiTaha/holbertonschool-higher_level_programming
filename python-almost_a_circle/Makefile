@@ -1,7 +1,7 @@
 #This is a Makefile
 
 Function_file = ./models/square.py
-Main_file = 14-main.py
+Main_file = 15-main.py
 
 #Main_file = $(number)-main.py
 
