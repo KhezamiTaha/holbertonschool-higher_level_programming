@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = ./models/base_model.py
+Function_file = 2-remove_database.sql
 
 
 Main_file = test_save_reload_user.py 
