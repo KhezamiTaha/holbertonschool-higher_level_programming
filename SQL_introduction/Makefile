@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 5-full_table.sql
+Function_file = 6-list_values.sql
 data:
 	cat $(Function_file) | mysql hbtn_0c_0
 
@@ -90,6 +90,7 @@ touch:
 	touch $(Function_file)
 #touch  $(Main_file)
 	echo "-- $(Function_file)" >> "$(Function_file)"
+	code $(Function_file)
 touch1:
 	echo "$(NAME)" >> "$(Function_file)"
 
