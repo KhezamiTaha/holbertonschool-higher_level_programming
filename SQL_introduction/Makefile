@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 10-top_score.sql
+Function_file = 11-best_score.sql
 data:
 	cat $(Function_file) | mysql hbtn_0c_0
 
