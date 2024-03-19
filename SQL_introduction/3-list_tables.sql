@@ -1,3 +1,2 @@
 -- Query comment
-USE mysql;
-SHOW TABLES ;
+SHOW TABLES;
