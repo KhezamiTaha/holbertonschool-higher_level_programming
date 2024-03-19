@@ -1,3 +1,2 @@
---Task comment
---Query comment
-show databases;
+-- Query comment
+SHOW DATABASES;
