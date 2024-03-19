@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 2-remove_database.sql
+Function_file = 3-list_tables.sql
 
 
 Main_file = test_save_reload_user.py 
