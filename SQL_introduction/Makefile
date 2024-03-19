@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 3-list_tables.sql
+Function_file = 4-first_table.sql
 
 
 Main_file = test_save_reload_user.py 
@@ -66,7 +66,7 @@ script:
 	./$(Function_file)
 
 data:
-	cat $(Function_file) | mysql
+	cat $(Function_file) | mysql hbtn_0c_0
 
 main:
 	chmod u+x $(Main_file)
@@ -88,7 +88,7 @@ create_files:
 touch:
 	touch $(Function_file)
 #touch  $(Main_file)
-	echo "-- Query comment" >> "$(Function_file)"
+	echo "-- $(Function_file)" >> "$(Function_file)"
 touch1:
 	echo "$(NAME)" >> "$(Function_file)"
 
