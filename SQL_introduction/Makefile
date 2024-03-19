@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 12-no_cheating.sql
+Function_file = 13-change_class.sql
 data:
 	cat $(Function_file) | mysql hbtn_0c_0
 
