@@ -1,6 +1,9 @@
 #This is a Makefile
 
-Function_file = 4-first_table.sql
+Function_file = 5-full_table.sql
+data:
+	cat $(Function_file) | mysql hbtn_0c_0
+
 
 
 Main_file = test_save_reload_user.py 
@@ -65,8 +68,6 @@ script:
 	pycodestyle $(Function_file)
 	./$(Function_file)
 
-data:
-	cat $(Function_file) | mysql hbtn_0c_0
 
 main:
 	chmod u+x $(Main_file)
