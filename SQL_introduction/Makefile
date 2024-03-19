@@ -1,6 +1,8 @@
 #This is a Makefile
 
 Function_file = ./models/base_model.py
+
+
 Main_file = test_save_reload_user.py 
 
 #Main_file =    $(number)-main.py
@@ -62,6 +64,10 @@ script:
 	chmod u+x $(Function_file)
 	pycodestyle $(Function_file)
 	./$(Function_file)
+
+data:
+	cat $(Function_file) | mysql
+
 main:
 	chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
@@ -80,9 +86,9 @@ create_files:
 	done
 
 touch:
-#touch $(Function_file)
-	touch  $(Main_file)
-#echo "#!/usr/bin/python3" >> "$(Function_file)"
+	touch $(Function_file)
+#touch  $(Main_file)
+	echo "-- Query comment" >> "$(Function_file)"
 touch1:
 	echo "$(NAME)" >> "$(Function_file)"
 
