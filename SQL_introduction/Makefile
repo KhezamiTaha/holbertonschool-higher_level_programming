@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 8-count_89.sql
+Function_file = 9-full_creation.sql
 data:
 	cat $(Function_file) | mysql hbtn_0c_0
 
