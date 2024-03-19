@@ -1,4 +1,5 @@
 -- 16-no_link.sql
-SELECT score, IF EXISTS name
+SELECT score, name
 from second_table
+WHERE name IS NOT NULL
 ORDER By score DESC;
