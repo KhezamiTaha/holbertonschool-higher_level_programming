@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 14-average.sql
+Function_file = 16-no_link.sql
 data:
 	cat $(Function_file) | mysql hbtn_0c_0
 
