@@ -1,8 +1,8 @@
 #This is a Makefile
 
-Function_file = 2-create_read_user.sql
+Function_file = 3-force_name.sql
 data:
-	cat $(Function_file) | mysql
+	cat $(Function_file) | mysql hbtn_0d_2
 
 
 
