@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 0-privileges.sql
+Function_file = 1-create_user.sql
 data:
 	cat $(Function_file) | mysql
 
