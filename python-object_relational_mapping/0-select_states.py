@@ -8,7 +8,7 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-     """
+    """
     Connects to a MySQL database and retrieves data from the states table.
 
     Usage:
