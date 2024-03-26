@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 6-states.sql
+Function_file = 1-filter_states.py
 data:
 	cat $(Function_file) | mysql hbtn_0d_2
 
@@ -13,7 +13,7 @@ Main_file = test_save_reload_user.py
 
 #Main_file =    $(number)-main.py
 
-NAME =  comments
+NAME =  #!/usr/bin/python3
 NAME1 =  def raise_exception_msg(message=""):
 Function_name = binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 number = $(shell echo $(Function_file) | grep -o '[0-9]*' | head -n1)
@@ -73,11 +73,11 @@ script:
 
 
 main:
-	chmod u+x $(Main_file)
+#chmod u+x $(Main_file)
 	chmod u+x $(Function_file)
 #black $(Function_file)
 	pycodestyle $(Function_file)
-	./$(Main_file)
+	./$(Function_file) root root hbtn_0e_0_usa
 file:
 	chmod u+x $(Function_file)
 #black $(Function_file)
@@ -93,7 +93,7 @@ touch:
 	touch $(Function_file)
 	code $(Function_file)
 #touch  $(Main_file)
-	echo "-- $(Function_file)" >> "$(Function_file)"
+#echo "-- $(Function_file)" >> "$(Function_file)"
 	
 touch1:
 	echo "$(NAME)" >> "$(Function_file)"
