@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 4-cities_by_state.py
+Function_file = 5-filter_cities.py
 
 
 main:
@@ -8,7 +8,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file) 
 	pycodestyle $(Function_file)
-	./$(Function_file) root root hbtn_0e_4_usa
+	./$(Function_file) root root hbtn_0e_4_usa Texas
 
 
 data:
