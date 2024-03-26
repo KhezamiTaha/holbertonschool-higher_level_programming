@@ -1,6 +1,16 @@
 #This is a Makefile
 
-Function_file = 1-filter_states.py
+Function_file = 3-my_safe_filter_states.py
+
+
+main:
+#chmod u+x $(Main_file)
+	chmod u+x $(Function_file)
+#black $(Function_file) 
+	pycodestyle $(Function_file)
+	./$(Function_file) root root hbtn_0e_0_usa 
+
+
 data:
 	cat $(Function_file) | mysql hbtn_0d_2
 
@@ -72,12 +82,7 @@ script:
 	./$(Function_file)
 
 
-main:
-#chmod u+x $(Main_file)
-	chmod u+x $(Function_file)
-#black $(Function_file)
-	pycodestyle $(Function_file)
-	./$(Function_file) root root hbtn_0e_0_usa
+
 file:
 	chmod u+x $(Function_file)
 #black $(Function_file)
@@ -91,7 +96,7 @@ create_files:
 
 touch:
 	touch $(Function_file)
-	code $(Function_file)
+#code $(Function_file)
 #touch  $(Main_file)
 #echo "-- $(Function_file)" >> "$(Function_file)"
 	
