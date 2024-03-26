@@ -20,10 +20,11 @@ if __name__ == "__main__":
 
     cursor.execute(query, (sys.argv[4],))
     rows = cursor.fetchall()
-    for row in rows:
-        if rows.index(row) == len(rows) - 1:
-            print(f"{row[0]}")
-        else:
-            print(f"{row[0]}, ", end="")
+    if rows is not None:
+        for row in rows:
+            if rows.index(row) == len(rows) - 1:
+                print(f"{row[0]}")
+            else:
+                print(f"{row[0]}, ", end="")
     cursor.close()
     db.close()
