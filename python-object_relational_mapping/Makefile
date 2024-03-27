@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 7-model_state_fetch_all.py
+Function_file = 8-model_state_fetch_first.py
 
 
 main:
@@ -8,7 +8,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file) 
 	pycodestyle $(Function_file)
-	./$(Function_file) root root hbtn_0e_4_usa Texas
+	./$(Function_file) root root hbtn_0e_6_usa
 
 
 data:
