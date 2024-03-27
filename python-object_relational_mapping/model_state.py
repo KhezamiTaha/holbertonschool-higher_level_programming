@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""create states class and base directive 
+"""create states class and base directive
 """
 
 import sqlalchemy
@@ -7,6 +7,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 
 Base = declarative_base()
+
+
 class State(Base):
     '''class will be mapped to a table
     '''
