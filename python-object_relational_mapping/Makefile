@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 5-filter_cities.py
+Function_file = 7-model_state_fetch_all.py
 
 
 main:
