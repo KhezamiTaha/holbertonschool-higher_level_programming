@@ -7,6 +7,7 @@ from model_state import Base
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
 
+
 class City(Base):
     '''class will be mapped to a table
     '''
