@@ -12,9 +12,10 @@ if __name__ == "__main__":
         sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     first_session = Session()
-    for objec_t in first_session.query(State.id).filter(
-            State.name==sys.argv[4]).order_by(State.id.asc()).all():
-        if objec_t:
-            print(f"{objec_t[0]}")
-        else:
-            print("Not found")
+    objec_ts = first_session.query(State.id).filter(
+            State.name == sys.argv[4]).order_by(State.id.asc()).all()
+    if objec_ts:
+        for obj in objec_ts:
+            print(f"{obj[0]}")
+    else:
+        print("Not found")

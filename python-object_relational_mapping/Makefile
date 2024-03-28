@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 9-model_state_filter_a.py
+Function_file = 10-model_state_my_get.py 
 
 
 main:
@@ -8,7 +8,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file) 
 	pycodestyle $(Function_file)
-	./$(Function_file) root root hbtn_0e_6_usa
+	./$(Function_file) root root hbtn_0e_6_usa Texas
 
 
 data:
