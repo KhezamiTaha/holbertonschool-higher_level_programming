@@ -1,6 +1,6 @@
 #This is a Makefile
 
-Function_file = 13-model_state_delete_a.py
+Function_file = 14-model_city_fetch_by_state.py
 
 
 main:
@@ -8,7 +8,7 @@ main:
 	chmod u+x $(Function_file)
 #black $(Function_file) 
 	pycodestyle $(Function_file)
-	./$(Function_file) root root hbtn_0e_6_usa
+	./$(Function_file) root root hbtn_0e_14_usa
 
 
 data:
