@@ -3,7 +3,6 @@
 """
 import sys
 
-from requests import session
 from model_state import Base, State
 
 from sqlalchemy import (create_engine)
