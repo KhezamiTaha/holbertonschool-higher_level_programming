@@ -19,4 +19,4 @@ class State(Base):
     id = Column(Integer, nullable=False, unique=True, primary_key=True)
     name = Column(String(128), nullable=False)
 
-    city = relationship("City", back_populates="state")
+    # city = relationship("City", back_populates="state")
